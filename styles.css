@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.hero-section {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-section .card {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-img-top {
+    max-height: 200px; /* Ajuste conforme necessário */
+    object-fit: cover;
+}

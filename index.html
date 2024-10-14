@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Meu Portfólio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#curriculo">Currículo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section id="sobre" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">
+                <strong id="titulo" style="color: black;">Olá, Eu Sou João Victor Poloniato Buss</strong>
+            </h1>
+            <p id="descricao" class="lead" style="color: black;">João Victor Poloniato Buss é um desenvolvedor júnior com expertise em tecnologias como React.js, Next.js, JavaScript, TypeScript, Python, C#, .NET, e bancos de dados como MySQL, MariaDB e MongoDB. Também trabalha com PHP e Node.js. Atualmente, João é analista de dados, apaixonado por automação e tecnologia, e está cursando Sistemas de Informação na Unemat. Seus projetos vão de sistemas de gestão de clientes a convites de casamento personalizados. Explore mais no perfil GitHub de João.</p>
+            <button onclick="toggleLanguage()" class="btn btn-secondary mt-3">Mudar Idioma</button>
+        </div>
+    </section>
+    
+
+    <section id="projetos" class="projects-section py-5">
+        <div class="container">
+            <h2 class="text-center">Projetos</h2>
+            <div class="row">
+                <!-- Adicionar cartões de projetos dinamicamente aqui -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./imagens/GAPY 2.png" class="card-img-top" alt="Gapy Recapagens">
+                        <div class="card-body">
+                            <h5 class="card-title">Gapy Recapagens</h5>
+                            <p class="card-text">Criação do site da Gapy Recapagens</p>
+                            <a href="https://grupogapy.com.br/" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./imagens/Dk1.png" class="card-img-top" alt="DK Auto Center site 1">
+                        <div class="card-body">
+                            <h5 class="card-title">DK Auto Center site 1</h5>
+                            <p class="card-text">Criação do site da DK Auto Center</p>
+                            <a href="https://dkautocenter.com.br/" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./imagens/PORTO.png" class="card-img-top" alt="Porto">
+                        <div class="card-body">
+                            <h5 class="card-title">PortoTech</h5>
+                            <p class="card-text">Criação do site da Portotech</p>
+                            <a href="https://teste.portotechsistemas.com.br/" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./imagens/Portfolio.png" class="card-img-top" alt="Porto">
+                        <div class="card-body">
+                            <h5 class="card-title">Meu Portfólio</h5>
+                            <p class="card-text">Meu Portfólio oficial feito em react</p>
+                            <a href="https://portfolio-rho-teal-29.vercel.app/" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./imagens/Eccomerce.png" class="card-img-top" alt="Porto">
+                        <div class="card-body">
+                            <h5 class="card-title">Eccomerce DK Auto Center</h5>
+                            <p class="card-text">Em processo de Criação</p>
+                            <a href="NAO TA EM PRODUÇÃO AINDA" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./imagens/Git.png" class="card-img-top" alt="Porto">
+                        <div class="card-body">
+                            <h5 class="card-title">Meu git</h5>
+                            <p class="card-text">Meus projetos no Git aqui tem uma infinidade de projetos caso queira ver</p>
+                            <a href="https://github.com/JoaoVictorPoloniato" class="btn btn-primary">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculo" class="resume-section py-5">
+        <div class="container">
+            <h2 class="text-center">Currículo</h2>
+            <a href="../curriculo/currículo Joao.pdf" class="btn btn-secondary">Baixar Meu Currículo</a>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center">Entre em Contato</h2>
+            <form action="../php/contato.php" method="post" class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p>&copy; <span id="currentYear"></span> João Victor Poloniato Buss. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
