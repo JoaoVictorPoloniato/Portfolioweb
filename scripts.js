@@ -1,4 +1,3 @@
-// Scroll to section smoothly
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -8,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Update current year in footer
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 let isEnglish = false;
@@ -29,8 +27,9 @@ function sendWhatsAppMessage() {
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const mensagem = document.getElementById('mensagem').value;
+    alert("Mensagem enviada com sucesso!");
 
-    const whatsappNumber = '556699686837095'; // Seu número com código do país e DDD
+    const whatsappNumber = '5566996837095';
     const text = `Nome: ${nome}%0AEmail: ${email}%0AMensagem: ${mensagem}`;
 
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${text}`;
