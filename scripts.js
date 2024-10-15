@@ -36,3 +36,16 @@ function sendWhatsAppMessage() {
 
     window.open(whatsappLink, '_blank');
 }
+
+
+function sendEmail() {
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    const subject = `Mensagem de ${nome}`;
+    const body = `Olá,\n\nVocê recebeu uma nova mensagem:\n\nNome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}`;
+    const mailtoUrl = `mailto:poloniato155@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.open(mailtoUrl, '_blank');
+}
